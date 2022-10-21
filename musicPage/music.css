@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;  
+}
+
+/*body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #444 30%, #fff 0%);
+    z-index: -1;
+}*/
+
+body{
+    background-image: url('./Images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #444;
+    padding: 15px 0;
+    
+}
+
+main{
+    width: 50%;
+    height: 550px;
+    margin: auto;
+   /* border: 1px solid black;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 30%;
+    height: 160px;
+    /*border: 1px solid red;*/
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.a{
+    background-image: url('./Images/guitar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(50%);
+}
+
+.b{
+    background-image: url('./Images/violin.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.c{
+    background-image: url('./Images/piano.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.d{
+    background-image: url('./Images/flute.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.e{
+    background-image: url('./Images/drum.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.f{
+    background-image: url('./Images/banjo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.g{
+    background-image: url('./Images/sitar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.h{
+    background-image: url('./Images/trumpet.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.i{
+    background-image: url('./Images/accordion.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}

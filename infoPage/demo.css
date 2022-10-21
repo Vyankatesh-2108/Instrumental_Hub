@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+}
+
+.header-section{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+/*margin-left: 10px;
+width: 100%;
+height: inherit;
+color: rgb(245, 150, 26);
+font-size: 3rem;
+font-weight: bold;
+position: relative;*/
+}
+
+.leftside{
+margin-top: 150px;
+color: #000;
+text-transform: uppercase;
+margin-left: 45px;
+}
+
+.leftside h3{
+font-family: 'Texturina', serif;
+font-size: 55px;
+color: rgb(255, 145, 0);
+margin-bottom: 20px;
+position: relative;
+}
+
+.leftside h3:after{
+content: "";
+width: 450px;
+height: 5px;
+position: absolute;
+top: 43%;
+
+}
+
+.leftside h1{
+margin-top: 40px;
+font-family: 'Texturina', serif;
+font-size: 38px;
+font-weight: 900;
+margin-bottom: 25px;
+color: #444;
+}
+
+.leftside p{
+font-size: 20px;
+margin-bottom: 35px;
+font-weight: 400;
+word-spacing: 4px; 
+/*font-family: 'Changa', sans-serif;*/
+font-family: 'Maven Pro',sans-serif;
+color: #444;
+}
+
+.rightside img{
+max-width: 450px;
+height: auto;
+margin-top:91%;
+}

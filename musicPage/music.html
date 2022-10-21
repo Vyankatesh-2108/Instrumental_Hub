@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruments</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="music.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+</head>
+<body onload="myfun()">
+   <a href="../homePage/simple.html"><i class="fas fa-home" href="simple.html" style="margin: 13px; font-size: 25px; cursor: pointer; color: #444;"></i></a>
+    <h1> Instrumental Hub</h1>
+    <main>
+        <div class="a song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Guitar</div>
+        <div class="b song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Violin</div>
+        <div class="c song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Piano</div>
+
+        <div class="d song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Flute</div>
+        <div class="e song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Drum</div>
+        <div class="f song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Banjo</div>
+
+        <div class="g song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Sitar</div>
+        <div class="h song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Trumpet</div>
+        <div class="i song" style="color: white;font-family: 'Maven Pro',sans-serif; ">Accordion</div>
+    </main>
+
+
+    <script>
+        //querySelectorAll: an array of object with element
+        var divlength = document.querySelectorAll('.song').length;//total length of songs
+        console.log(divlength);//divlength=9
+
+        for(var i=0;i<divlength;i++){
+            var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+            
+            var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+        }
+
+        var song1 = new Audio();
+        song1.src = "Music/Guitar.mpeg";//first song
+
+        var song2 = new Audio();
+        song2.src = "Music/Violin.mpeg";//second song
+
+        var song3 = new Audio();
+        song3.src = "Music/Piano.mpeg";//Third song
+
+        var song4 = new Audio();
+        song4.src = "Music/Flute.mpeg";//fourth song
+
+        var song5 = new Audio();
+        song5.src = "Music/Drum_Set.mpeg";
+
+        var song6 = new Audio();
+        song6.src = "Music/Banjo.mpeg";
+
+        var song7 = new Audio();
+        song7.src = "Music/Sitar.mpeg";
+
+        var song8 = new Audio();
+        song8.src = "Music/Trumpet.mpeg";
+
+        var song9 = new Audio();
+        song9.src = "Music/Accordion.mpeg";
+
+        function playsong(){
+           //console.log(this);
+           //console.log(this.innerHTML);
+
+           var songId = this.innerHTML;
+           console.log(songId);
+
+
+           switch(songId){   
+               case "Guitar":   
+                song1.play();
+                break;
+
+                case "Violin":
+                song2.play();
+                break;
+
+                case "Piano":
+                song3.play();
+                break;
+
+                case "Flute":
+                song4.play();
+                break;
+
+                case "Drum":
+                song5.play();
+                break;
+
+                case "Banjo":
+                song6.play();
+                break;
+
+                case "Sitar":
+                song7.play();
+                break;
+
+                case "Trumpet":
+                song8.play();
+                break;
+
+                case "Accordion":
+                song9.play();
+                break;
+
+                default:
+                console.log("wrong Input");
+                break;
+           }
+        }
+
+        
+        function pausesong(){
+            var songId = this.innerHTML;
+           console.log(songId);
+           
+            switch(songId){
+               case "Guitar":
+                song1.pause();
+                break;
+
+                case "Violin":
+                song2.pause();
+                break;
+
+                case "Piano":
+                song3.pause();
+                break;
+
+                case "Flute":
+                song4.pause();
+                break;
+
+                case "Drum":
+                song5.pause();
+                break;
+
+                case "Banjo":
+                song6.pause();
+                break;
+
+                case "Sitar":
+                song7.pause();
+                break;
+
+                case "Trumpet":
+                song8.pause();
+                break;
+
+                case "Accordion":
+                song9.pause();    
+                break;
+
+                default:
+                console.log("wrong Input");
+                break;
+           }
+        }
+    
+       function myfun(){
+           alert("single tap to play and double tap to pause .....")
+       }
+    </script>
+</body>
+</html>

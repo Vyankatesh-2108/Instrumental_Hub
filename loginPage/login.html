@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+    <form action="">
+    <div class="cont">
+        <div class="form sign-in">
+            <h2 class="head">Sign In</h2>
+            <label>
+                <span class="head" >Email Address</span>
+                <input type="email" style="font-family: cursive;" id="email" class="form-control" class="active" placeholder="Enter email" >
+            </label>
+            <label>
+                <span class="head" >Password</span>
+                <input type="password" style="font-family: cursive;" id="password" class="form-control" class="active" placeholder="Enter Password">
+            </label>
+            <button class="submit" type="submit" class="head" onclick="validate()">Sign In</button>
+            <p class="forgot-pass" class="head">Forgot Password ?</p>
+            <div class="social-media">
+                   <ul>
+                       <li><a onclick="openWin()"><img src="./facebook.png"></a></li>
+                       <li><a onclick="openInsta()"><img src="./instagram.png"></a></li>
+                       <li><img src="./twitter.png"></li>
+                       <li><a href="https://www.linkedin.com/in/chinmay-pimpalgaonkar-0890001aa/"><img src="./linkedin.png"></a></li>
+                   </ul> 
+            </div>
+        </div>
+    </form>    
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img-text m-up">
+                    <h2>New here?</h2>
+                    <p>Sign up and discover great amout of new opportunities!</p>
+                </div>
+                <div class="img-text m-in">
+                    <h2>One of us?</h2>
+                    <p>If you already has an account, just sign in. We'he missed you!</p>
+                </div>
+                <div class="img-btn">
+                    <span class="m-up" style="font-size: 20px;">Sign-Up</span>
+                    <span class="m-in" style="font-size: 20px;">Sign-Up</span>
+                </div>
+            </div>
+        <form name="myform" action="">    
+            <div class="form signup">
+                <h2 class="head">Sign Up</h2>
+                <label>
+                    <span class="head">Name</span>
+                    <input type="text" id="name2">   
+                </label>
+                <label>
+                    <span class="head">Email</span>
+                    <input type="email" id="email2" name="email">   
+                </label>
+                <label>
+                    <span class="head">Password</span>
+                    <input type="password" class="password" name="password>   
+                </label>
+                <label>
+                    <span class="head">Confirm Password</span>
+                    <input type="password" class="confirmpassword" >   
+                </label>
+                <button type="submit" class="submit1" onclick="setCookie(email,Password,1)" style="margin-top: 40px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+                background:rgb(255, 217, 1);
+                color: black;">Sign Up Now</button>
+    
+               
+               </div>
+               
+        </form> 
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js">
+    
+    </script>
+</body>
+</html>

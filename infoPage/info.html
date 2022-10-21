@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infoPage</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <script>
+        
+      Banners = new Array('./images/banner1.jpg','./images/banner2.jpg',
+      './images/banner3.jpg')
+      BannerLink = new Array(
+      'myLink1.com','myLink2.com', 'myLink3.com')
+      CurrentBanner = 0
+      NumOfBanners = Banners.length
+      function LinkBanner(){
+      document.location.href =
+      "http://www." + BannerLink[CurrentBanner]
+      }
+      function DisplayBanners() {
+      if (document.images) {
+      CurrentBanner++
+      if (CurrentBanner == NumOfBanners) {
+      CurrentBanner = 0
+      }
+      document.RotateBanner.src= Banners[CurrentBanner]
+      setTimeout("DisplayBanners()",1000)
+      }
+      }
+      
+           </script> 
+</head>
+<style> 
+   .main-banner {
+       margin:0 auto;
+       width: 100%;
+       height: 200%;
+       background-color: #fff;
+       overflow: hidden;
+       position: relative;
+   }
+   img{
+       border-radius: 8px;
+       border:1px solid #ddd;
+       padding: 5px;
+       width:1000px;
+       height: 300;
+       opacity: 1;
+   }
+</style>
+<body onload="DisplayBanners()">
+  <div class="main-banner">
+    <center>
+    <a href="javascript: LinkBanner()"><img src="./images/banner1.jpg"
+   width="450" height="400" name="RotateBanner" /></a>
+    </center>
+   </div>
+    <section class="happyclients">
+        <div class="container headings text-center">
+          <h1 class="text-center font-weight-bold">Musical Instrument's</h1>
+          <p class="text-capitalize pt-1">Life is one grand sweet song so start the music.</p>
+        </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+        
+          <!-- The slideshow -->
+
+          <div class="carousel-inner container">
+            <div class="carousel-item active">
+              
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12">
+                      <div class="box">
+                          <a href="#guitar"><img src="./images/guitar.jpg" class="img-fluidi img-thumbnail"></a>
+                          <p class="m-4">The guitar is a fretted musical instrument that usually has six strings. It is typically played with both hands by strumming or plucking the strings with either a guitar pick or the fingers/fingernails of one hand.</p>
+
+                          <h1>Guitar</h1>
+                          <h2>Web Developer</h2>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <div class="box">
+                        <a href="#violin"><img src="./images/violin.jpg" class="img-fluidi img-thumbnail"></a>
+                        <p class="m-4">The violin, sometimes known as a fiddle, is a wooden chordophone in the violin family. Most violins have a hollow wooden body. It is the smallest and thus highest-pitched instrument in the family in regular use.</p>
+
+                        <h1>Violin</h1>
+                        <h2>Web Developer</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="box">
+                      <a href="#piano"><img src="./images/piano.jpg" class="img-fluidi img-thumbnail"></a>
+                      <p class="m-4">The piano is an acoustic, stringed musical instrument invented in Italy by Bartolomeo Cristofori around the year 1700, in which the strings are struck by wooden hammers that are coated with a softer material.</p>
+
+                      <h1>Piano</h1>
+                      <h2>Web Developer</h2>
+                  </div>
+              </div>
+
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="box">
+                        <a href="#flute"><img src="./images/flute.jpg" class="img-fluidi img-thumbnail"></a>
+                        <p class="m-4">The flute is a family of musical instruments in the woodwind group. Unlike woodwind instruments with reeds, a flute is an aerophone or reedless wind instrument.</p>
+
+                        <h1>Flute</h1>
+                        <h2>Web Developer</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="box">
+                      <a href="#drum"><img src="./images/drum.jpg" class="img-fluidi img-thumbnail"></a>
+                      <p class="m-4">The drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system, it is a membranophone.</p>
+
+                      <h1>Drum</h1>
+                      <h2>Web Developer</h2>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="box">
+                    <a href="#banjo"><img src="./images/banjo.jpg" class="img-fluidi img-thumbnail"></a>
+                    <p class="m-4">The banjo is a stringed instrument with a thin membrane stretched over a frame or cavity to form a resonator. The membrane is typically circular, and usually made of plastic.</p>
+
+                    <h1>Banjo</h1>
+                    <h2>Web Developer</h2>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="box">
+                        <a href="#sitar"><img src="./images/sitar.jpg" class="img-fluidi img-thumbnail"></a>
+                        <p class="m-4">The sitar is a plucked stringed instrument, originating from the Indian subcontinent, used in Hindustani classical music. The instrument was invented in medieval India and flourished in the 16th and 17th.</p>
+
+                        <h1>Sitar</h1>
+                        <h2>Web Developer</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="box">
+                      <a href="#trumpet"><img src="./images/trumpet.jpg" class="img-fluidi img-thumbnail"></a>
+                      <p class="m-4">The trumpet is a brass instrument commonly used in classical and jazz ensembles. The trumpet group ranges from the piccolo trumpet with the highest register in the brass family, to the bass trumpet</p>
+
+                      <h1>Trumpet</h1>
+                      <h2>Web Developer</h2>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="box">
+                    <a href="#accordion"><img src="./images/accordion.jpg" class="img-fluidi img-thumbnail"></a>
+                    <p class="m-4">Accordions are a family of box-shaped musical instruments of the bellows-driven free-reed aerophone type, colloquially referred to as a squeezebox. A person who plays the accordion is called an accordionist.</p>
+
+                    <h1>Accordion</h1>
+                    <h2>Web Developer</h2>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        
+        </div>
+      </section>
+
+      <section class="header-section" id="guitar">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Guitar</h1>
+            <p style="font-size: 15px;">The guitar is a fretted musical instrument that usually has six strings.It is typically played with both hands by strumming or plucking the strings with either a guitar pick or the fingers/fingernails of one hand, while simultaneously fretting (pressing the strings against the frets) with the fingers of the other hand. The sound of the vibrating strings is projected either acoustically, by means of the hollow chamber of the guitar (for an acoustic guitar), or through an electrical amplifier and a speaker.
+
+                The guitar is a type of chordophone – wherein the sound is produced by way of a string, stretched between two fixed points, vibrating when plucked – traditionally constructed from wood and strung with either gut, nylon or steel strings and distinguished from other chordophones by its construction and tuning. The modern guitar was preceded by the gittern, the vihuela, the four-course Renaissance guitar, and the five-course baroque guitar, all of which contributed to the development of the modern six-string instrument.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/guitar1.jpg" onmouseover="src='./images/38759.jpg'" onmouseout="src='./images/guitar1.jpg'"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="violin" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Violin</h1>
+            <p style="font-size: 15px;">Violins are important instruments in a wide variety of musical genres. They are most prominent in the Western classical tradition, both in ensembles (from chamber music to orchestras) and as solo instruments. Violins are also important in many varieties of folk music, including country music, bluegrass music and in jazz. Electric violins with solid bodies and piezoelectric pickups are used in some forms of rock music and jazz fusion, with the pickups plugged into instrument amplifiers and speakers to produce sound. The violin has come to be incorporated in many non-Western music cultures, including Indian music and Iranian music. The name fiddle is often used regardless of the type of music played on it.
+
+              The violin was first known in 16th-century Italy, with some further modifications occurring in the 18th and 19th centuries to give the instrument a more powerful sound and projection. In Europe, it served as the basis for the development of other stringed instruments used in Western classical music, such as the viola.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/preview.jpg" onmouseover="src='./images/violin1.jpg'" onmouseout="src='./images/preview.jpg'"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="piano" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Piano</h1>
+            <p style="font-size: 15px;">The piano is an acoustic, stringed musical instrument invented in Italy by Bartolomeo Cristofori around the year 1700 (the exact year is uncertain), in which the strings are struck by wooden hammers that are coated with a softer material (modern hammers are covered with dense wool felt; some early pianos used leather). It is played using a keyboard, which is a row of keys (small levers) that the performer presses down or strikes with the fingers and thumbs of both hands to cause the hammers to strike the strings.
+
+              The word piano is a shortened form of pianoforte, the Italian term for the early 1700s versions of the instrument, which in turn derives from gravicembalo col piano e forte (key cymbal with quieter and louder) and fortepiano.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/piano1.jpg" onmouseover="src='./images/piano (2).jpg'" onmouseout="src='./images/piano1.jpg'"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="flute" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Flute</h1>
+            <p style="font-size: 15px;">The flute is a family of musical instruments in the woodwind group. Unlike woodwind instruments with reeds, a flute is an aerophone or reedless wind instrument that produces its sound from the flow of air across an opening. According to the instrument classification of Hornbostel–Sachs, flutes are categorized as edge-blown aerophones. A musician who plays the flute can be referred to as a flute player, flautist, flutist or, less commonly, fluter or flutenist.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/flute1.jpg" onmouseover="src='./images/flute2.jpg'" onmouseout="src='./images/flute1.jpg'"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="drum" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Drum</h1>
+            <p style="font-size: 15px;">The drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system, it is a membranophone.Drums consist of at least one membrane, called a drumhead or drum skin, that is stretched over a shell and struck, either directly with the player's hands, or with a percussion mallet, to produce sound. There is usually a resonance head on the underside of the drum, typically tuned to a slightly lower pitch than the top drumhead. Other techniques have been used to cause drums to make sound, such as the thumb roll. Drums are the world's oldest and most ubiquitous musical instruments, and the basic design has remained virtually unchanged for thousands of years.
+              Drums may be played individually, with the player using a single drum, and some drums such as the djembe are almost always played in this way.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/drum1.jpg"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="banjo" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Banjo</h1>
+            <p style="font-size: 15px;">The banjo is a stringed instrument with a thin membrane stretched over a frame or cavity to form a resonator. The membrane is typically circular, and usually made of plastic, or occasionally animal skin. Early forms of the instrument were fashioned by African-Americans in the United States, adapted from African instruments of similar design. The banjo is frequently associated with folk and country music, and has also been used in some rock songs. Several rock bands, such as The Eagles, Led Zeppelin, and The Allman Brothers, have used the five-string banjo in some of their songs. Historically, the banjo occupied a central place in African-American traditional music and the folk culture of rural whites before entering the mainstream via the minstrel shows of the 19th century.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/banjo_144276.jpg" > 
+        </div>
+    </section>
+
+    <section class="header-section" id="sitar" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Sitar</h1>
+            <p style="font-size: 15px;">The sitar is a plucked stringed instrument, originating from the Indian subcontinent, used in Hindustani classical music. The instrument was invented in medieval India and flourished in the 16th and 17th centuries and arrived at its present form in 18th-century India.
+              Used widely throughout the Indian subcontinent, the sitar became popularly known in the wider world through the works of Ravi Shankar, beginning in the late 1950s and early 1960s. In the 1960s, a short-lived trend arose for the use of the sitar in Western popular music, with the instrument appearing on tracks by bands such as The Beatles, The Doors, The Rolling Stones, Metallica and others.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/sitar1.jpg"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="trumpet" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Trumpet</h1>
+            <p style="font-size: 15px;">The trumpet is a brass instrument commonly used in classical and jazz ensembles. The trumpet group ranges from the piccolo trumpet with the highest register in the brass family, to the bass trumpet, which is pitched one octave below the standard B♭ or C Trumpet.
+              Trumpets are used in art music styles, for instance in orchestras, concert bands, and jazz ensembles, as well as in popular music. They are played by blowing air through nearly-closed lips (called the player's embouchure), producing a "buzzing" sound that starts a standing wave vibration in the air column inside the instrument. Since the late 15th century, trumpets have primarily been constructed of brass tubing, usually bent twice into a rounded rectangular shape.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/trumpet01.jpg" onmouseover="src='./images/trumpet1.jpg'" onmouseout="src='./images/trumpet01.jpg'"> 
+        </div>
+    </section>
+
+    <section class="header-section" id="accordion" style="margin-top: 18%;">
+        <div class="leftside">
+          <h1 class="font-wight-bold">Accordion</h1>
+            <p style="font-size: 15px;">Accordions (from 19th-century German Akkordeon, from Akkord—"musical chord, concord of sounds") are a family of box-shaped musical instruments of the bellows-driven free-reed aerophone type, colloquially referred to as a squeezebox. A person who plays the accordion is called an accordionist. The concertina and bandoneón are related. The harmonium and American reed organ are in the same family, but are typically larger than an accordion and sit on a surface or the floor.
+
+              The accordion is played by compressing or expanding the bellows while pressing buttons or keys, causing pallets to open, which allow air to flow across strips of brass or steel, called reeds.</p>
+        </div>
+
+        <div class="rightside">
+          <img src="./images/accordion1.jpg"> 
+        </div>
+    </section>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+</body>
+</html>
